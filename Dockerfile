@@ -7,9 +7,9 @@ WORKDIR /www
 ARG container_port=5000
 ARG username=jhesg
 ARG password=12345
-ARG devImportMapUrl=dev-import-map.json
-ARG stageImportMapUrl=staging-import-map.json
-ARG prodImportMapUrl=prod-import-map.json
+ARG devImportMapUrl=google://microfrontends-app/importmap.json
+ARG stageImportMapUrl=google://microfrontends-app/importmap.json
+ARG prodImportMapUrl=google://microfrontends-app/importmap.json
 
 ENV PORT=$container_port
 ENV HTTP_USERNAME=$username

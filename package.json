@@ -1,5 +1,5 @@
 {
-  "name": "import-map-deployer",
+  "name": "@jhesg/ms-import-map-deployer",
   "version": "2.2.3",
   "description": "a manifest deployer for sofe",
   "main": "src/web-server.js",

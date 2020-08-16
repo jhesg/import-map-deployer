@@ -14,8 +14,12 @@ if (argv._.length === 1) {
 }
 
 if (argv._.length === 0) {
+  //see if the default config.js exists
+  if (fs.existsSync(path.resolve(__dirname, "../config.js"))) {
+    config = require("../config.js");
+  }
   //see if the default config.json exists
-  if (fs.existsSync(path.resolve(__dirname, "../config.json"))) {
+  else if (fs.existsSync(path.resolve(__dirname, "../config.json"))) {
     config = require("../config.json");
   }
 }
